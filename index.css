@@ -1,0 +1,61 @@
+.hero {
+    background-image: url("./AI.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+.footer {
+    background-color: #012952;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.event {
+    position: relative;
+    background-image: url("./conk.jpg");
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(8px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.event > * {
+    position: relative;
+    z-index: 1;
+}
+
+.footer a, .footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.me-3:hover {
+    transform: scalb nb b e(1.05);
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+}
