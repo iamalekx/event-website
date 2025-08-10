@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
     $("h2").css({"text-transform" : "uppercase", "font-weight": "bold"});
     
