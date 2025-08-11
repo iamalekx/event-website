@@ -17,16 +17,16 @@ $(document).ready(() => {
 
         
         const email = $("#email").val().trim();
-        const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-        if (!emailRegex.test(email)) {
+        const emailReges = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+        if (!emailReges.test(email)) {
             $("#emailError").text("Enter a valid email address.");
             valid = false;
         }
 
         
         const phone = $("#phone").val().trim();
-        const phoneRegex = /^[0-9]{10}$/;
-        if (!phoneRegex.test(phone)) {
+        const phoneReges = /^[0-9]{10}$/;
+        if (!phoneReges.test(phone)) {
             $("#phoneError").text("Enter a 10-digit phone number.");
             valid = false;
         }
